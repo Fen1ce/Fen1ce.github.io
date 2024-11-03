@@ -1,9 +1,23 @@
+@import url("https://fonts.googleapis.com/css?family=Aclonica|Fauna One");
+
 /* SFONDO */
 html { 
 	background: url(Gallina_Sfuggente.jpg) no-repeat center fixed; 
 	background-size: cover;
 	background-color: rgba(255,255,255,0.6);
 	background-blend-mode: lighten;
+}
+
+/* FONT STILE */
+body {
+  font-family: 'Fauna One', serif;
+}
+h1, h3 {
+	font-family: "Aclonica", serif;
+}
+h1 {
+	font-size: 2.5em;
+	text-shadow: 3px 3px 3px #636262;
 }
 
 /* CSS PER CENTRARE IMG */
