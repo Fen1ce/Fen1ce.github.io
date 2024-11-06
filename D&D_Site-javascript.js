@@ -1,10 +1,20 @@
-// FUNZIONE CAMBIO IMMAGINE
-function changeImage(id) { // cambia ciclicamente l'immagine visualizzata
+// FUNZIONE CAMBIO IMMAGINE - attualmente disabilitata in questa versione
+/*function changeImage(id) { // cambia ciclicamente l'immagine visualizzata
     var image = document.getElementById(id);
     if (image.src.match('Figures/'+id+'_propic.jpg')) { // se l'immagine è una propic
         image.src = "Figures/"+id+"_token.png"; // la sostituisce con il token
     } else { // se invece l'immagine è un token
         image.src = "Figures/"+id+"_propic.jpg"; // la sostituisce con la propic
+    }
+}*/
+
+// FUNZIONE CAMBIO IMMAGINE - propic dal web
+function changeImage(id) { // cambia ciclicamente l'immagine visualizzata
+    var image = document.getElementById(id);
+    if (image.src.match('https://i.pinimg.com/originals/1b/d2/d0/1bd2d05681f47841dccb59d1b2bd394f.jpg')) { // se l'immagine è una propic
+        image.src = "Figures/"+id+"_token.png"; // la sostituisce con il token
+    } else { // se invece l'immagine è un token
+        image.src = "https://i.pinimg.com/originals/1b/d2/d0/1bd2d05681f47841dccb59d1b2bd394f.jpg"; // la sostituisce con la propic
     }
 }
 
