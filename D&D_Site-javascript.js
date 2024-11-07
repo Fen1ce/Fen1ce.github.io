@@ -19,7 +19,7 @@ function changeImage(id) { // cambia ciclicamente l'immagine visualizzata
 }
 
 // FUNZIONE DIV A SCOMPARSA
-function cambiaStato (id_btn, id_elm){ // cambia ciclicamente la visibilità dell'elemento indicato
+function indexState (id_btn, id_elm){ // cambia ciclicamente la visibilità dell'elemento indicato
 	if (document.getElementById){ // se un elemento con l'id specificato esiste,
 		if(document.getElementById(id_elm).style.display == 'none') { // se l'elemento è nascosto,
 			document.getElementById(id_elm).style.display = 'block'; // lo visualizza
@@ -32,7 +32,7 @@ function cambiaStato (id_btn, id_elm){ // cambia ciclicamente la visibilità del
 }
 
 // FUNZIONE VISUALIZZA MEME
-function mostraMeme(id_btn, id_elm) {
+function showMeme(id_btn, id_elm) {
     // Identifica gli altri div e pulsanti
     const otherElm = id_elm === 'Session01' ? 'Session02' : 'Session01';
     const otherBtn = id_btn === 'btn01' ? 'btn02' : 'btn01';
