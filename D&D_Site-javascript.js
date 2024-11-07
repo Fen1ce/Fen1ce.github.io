@@ -21,7 +21,7 @@ function changeImage(id) { // cambia ciclicamente l'immagine visualizzata
 // FUNZIONE DIV A SCOMPARSA
 function indexState (id_btn, id_elm){ // cambia ciclicamente la visibilità dell'elemento indicato
 	if (document.getElementById){ // se un elemento con l'id specificato esiste,
-		if(document.getElementById(id_elm).style.display == 'none') { // se l'elemento è nascosto,
+		if(document.getElementById(id_elm).style.display === 'none') { // se l'elemento è nascosto,
 			document.getElementById(id_elm).style.display = 'block'; // lo visualizza
 			document.getElementById(id_btn).innerHTML = "nascondi"; // e aggiorna l'etichetta del pulsante
 		}else{ // se invece l'elemento è visualizzato,
